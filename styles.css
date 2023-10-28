@@ -30,9 +30,16 @@
 }
 
 body {
-    background-color: #0e0e0e;
+    background-color: black;
     color: rgb(255, 255, 255);
     font-family: 'Rajdhani', sans-serif;
+}
+
+.home {
+    background-image: url("Cyberpunk2077_A_mercenary_on_the_rise_RGB.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav {
@@ -47,12 +54,51 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    border: 2px solid #f2e900;
+    background-color: #00000050;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 100% 50%, 95% 100%, 0 100%, 0 100%, 0 50%);
+}
+
+nav ul:before {
+    display: block;
+    content: "";
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+    width: 28px;
+    height: 52px;
+    transform: rotate(49deg);
+
+    /* Border */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f2e900;
+}
+
+nav ul:after {
+    display: block;
+    content: "";
+    position: relative;
+    bottom: -33px;
+    right: -16px;
+    width: 33px;
+    height: 40px;
+    transform: rotate(49deg);
+
+    /* Border */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f2e900;
 
 }
 
 nav ul li {
     list-style: none;
-    margin: 0 30px;
+    align-items: center;
+    align-content: center;
+    margin: 0 20px;
+    padding: 15px 10px;
+    font-size: 18px;
     color: #02d7f2;
 }
 
@@ -124,6 +170,6 @@ nav ul li {
     border-color: yellow;
 }*/
 
-.redtext{
+.redtext {
     color: #b10000;
 }
