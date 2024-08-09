@@ -102,6 +102,22 @@ nav ul li {
     color: #02d7f2;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: #02d7f2;
+}
+
+.contact{
+    list-style: none;
+    align-items: center;
+    align-content: center;
+    margin: 0 20px;
+    padding: 15px 10px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #b10000;
+}
+
 .left {
     font-family: "sentex";
     font-size: 40px;
